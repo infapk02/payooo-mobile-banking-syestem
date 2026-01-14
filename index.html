@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payooo Mobile Banking</title>
+    <!-- tailwind css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- style.css -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="w-full h-screen bg-slate-900">
+      <section
+        class="max-w-md h-full p-4 bg-slate-100 mx-auto flex justify-center items-center"
+      >
+        <div
+          class="w-full h-fit pb-4 flex justify-center flex-col items-center"
+        >
+          <!-- image-box -->
+          <div
+            class="bg-[url(./assets/bg.png)] bg-no-repeat mt-2 w-3/4 h-28 flex justify-center"
+          >
+            <img src="./assets/Group.png" alt="" class="w-3/12 h-fit mt-5" />
+          </div>
+
+          <!-- input boxes -->
+          <div
+            class="w-full h-fit p-8 pb-12 pt-10 gap-5 bg-white shadow-sm rounded-md flex justify-center items-center flex-col"
+          >
+            <!-- account number -->
+            <div class="w-full h-fit flex flex-col space-y-1">
+              <label for="accountNumber">Account Number</label>
+              <input
+                id="accountNumber"
+                type="number"
+                maxlength="11"
+                placeholder="Enter Account Number"
+                class="p-2 bg-gray-200 focus:outline-0 border-0 ps-4 rounded-md"
+              />
+            </div>
+            <!-- pin  -->
+            <div class="w-full h-fit flex flex-col space-y-1">
+              <label for="pin">PIN</label>
+              <input
+                id="pin"
+                type="password"
+                placeholder="Enter PIN"
+                class="p-2 bg-gray-200 focus:outline-0 border-0 ps-4 rounded-md"
+              />
+            </div>
+
+            <button
+              id="loginBtn"
+              class="w-full btn mt-4 bg-blue-500 text-white"
+            >
+              Login
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./utilis.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

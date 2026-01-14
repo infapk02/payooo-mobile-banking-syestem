@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payoo Mobile Banking</title>
+    <!-- tailwind css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- remix Icon CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- style.css -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="w-full min-h-screen bg-slate-900">
+      <section class="max-w-md min-h-screen bg-gray-100 mx-auto">
+        <nav
+          class="flex justify-between items-center p-4 border-b-2 border-gray-300"
+        >
+          <!-- nav-left -->
+          <div class="w-fit h-16 space-x-1 flex justify-center items-center">
+            <!-- image div -->
+            <div class="w-16 h-16">
+              <img
+                src="./assets/Group.png"
+                alt="payooo logo"
+                class="w-full h-full object-contain"
+              />
+            </div>
+
+            <!-- text div -->
+            <div>
+              <h3 class="text-2xl font-semibold">$ <span>4500</span></h3>
+              <p class="text-sm capitalize text-gray-700">available balance</p>
+            </div>
+          </div>
+          <!-- nav-right -->
+          <div>
+            <button
+              class="btn border-2 border-gray-300 flex justify-between items-center text-base"
+            >
+              <i class="ri-logout-box-line mt-[2px]"></i> <span>Logout</span>
+            </button>
+          </div>
+        </nav>
+
+        <!-- welcome text box -->
+        <div class="py-8 p-2">
+          <h1 class="text-2xl font-semibold">Welcome to Payooo!</h1>
+          <p class="text-lg text-gray-600 mt-2">
+            Enjoy easy and convenient financial services with us. Cash-out
+            charge is low and
+          </p>
+        </div>
+
+        <!-- menu boxes -->
+        <div class="grid grid-cols-3 p-2 gap-2">
+          <!-- add money card -->
+          <div
+            class="box bg-white shadow-md rounded-md py-5 flex flex-col justify-center items-center"
+          >
+            <img src="./assets/purse1.png" alt="money-add-image" />
+            <p class="text-sm capitalize mt-1">add money</p>
+          </div>
+
+          <!-- cash-out card -->
+          <div
+            class="box bg-white shadow-md rounded-md py-5 flex flex-col justify-center items-center"
+          >
+            <img src="./assets/send1.png" alt="money-send-image" />
+            <p class="text-sm capitalize mt-1">cash out</p>
+          </div>
+
+          <!-- transfer money card -->
+          <div
+            class="box bg-white shadow-md rounded-md py-5 flex flex-col justify-center items-center"
+          >
+            <img src="./assets/money1.png" alt="money-image" />
+            <p class="text-sm capitalize mt-1">transfer money</p>
+          </div>
+
+          <!-- bonus card -->
+          <div
+            class="box bg-white shadow-md rounded-md py-5 flex flex-col justify-center items-center"
+          >
+            <img src="./assets/bonus1.png" alt="bonus-image" />
+            <p class="text-sm capitalize mt-1">get bonus</p>
+          </div>
+
+          <!-- pay bill card -->
+          <div
+            class="box bg-white shadow-md rounded-md py-5 flex flex-col justify-center items-center"
+          >
+            <img src="./assets/wallet1.png" alt="wallet-image" />
+            <p class="text-sm capitalize mt-1">pay bill</p>
+          </div>
+
+          <!-- transactions card -->
+          <div
+            class="box bg-white shadow-md rounded-md py-5 flex flex-col justify-center items-center"
+          >
+            <img src="./assets/transaction1.png" alt="transactions-image" />
+            <p class="text-sm capitalize mt-1">transactions</p>
+          </div>
+        </div>
+
+        <!-- add money section -->
+        <div class="p-2 w-full h-fit my-4">
+          <h2 class="font-semibold capitalize text-2xl text-gray-700">
+            add money
+          </h2>
+          <div
+            class="px-2 py-4 w-full h-fit bg-white rounded-md shadow-md mt-3"
+          >
+            <form>
+              <!-- select input -->
+              <div></div>
+              <!-- account input -->
+              <div></div>
+              <!-- amount input -->
+              <div></div>
+              <!-- pin input -->
+              <div></div>
+              <!-- add btn -->
+              <div></div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
