@@ -27,3 +27,12 @@ input[type="number"] {
 .box:hover p {
   color: rgba(0, 110, 255, 0.503);
 }
+
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE & Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}

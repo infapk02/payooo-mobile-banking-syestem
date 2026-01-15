@@ -20,8 +20,10 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <main class="w-full min-h-screen bg-slate-900">
-      <section class="max-w-md min-h-screen bg-gray-100 mx-auto">
+    <main class="w-full h-screen overflow-hidden bg-slate-900">
+      <section
+        class="max-w-md h-screen overflow-x-hidden overflow-y-scroll bg-gray-100 mx-auto hide-scrollbar"
+      >
         <nav
           class="flex justify-between items-center p-4 border-b-2 border-gray-300"
         >
@@ -53,7 +55,7 @@
         </nav>
 
         <!-- welcome text box -->
-        <div class="py-8 p-2">
+        <div class="py-4 p-2">
           <h1 class="text-2xl font-semibold">Welcome to Payooo!</h1>
           <p class="text-lg text-gray-600 mt-2">
             Enjoy easy and convenient financial services with us. Cash-out
@@ -118,19 +120,65 @@
             add money
           </h2>
           <div
-            class="px-2 py-4 w-full h-fit bg-white rounded-md shadow-md mt-3"
+            class="px-2 py-6 w-full h-fit bg-white rounded-md shadow-md mt-3"
           >
-            <form>
+            <form class="w-full space-y-4">
               <!-- select input -->
-              <div></div>
-              <!-- account input -->
-              <div></div>
+              <div class="w-full flex flex-col space-y-2">
+                <label for="selectMethod" class="capitalize"
+                  >Select a method</label
+                >
+                <select
+                  name="selectMethod"
+                  id="selectMethod"
+                  class="w-full p-2 rounded-md bg-gray-200 border-0 focus:border-0 focus:outline-0"
+                >
+                  <option class="capitalize">Select a Method</option>
+                  <option class="capitalize" value="Bkash">Bkash</option>
+                  <option class="capitalize" value="Nagad">Nagad</option>
+                  <option class="capitalize" value="DBBL">DBBL</option>
+                  <option class="capitalize" value="Ucash">Ucash</option>
+                  <option class="capitalize" value="Fast Pay">Fast Pay</option>
+                </select>
+              </div>
+              <!-- account number -->
+              <div class="w-full h-fit flex flex-col space-y-2">
+                <label for="bankAccountNumber">Bank Account Number</label>
+                <input
+                  id="bankAccountNumber"
+                  type="number"
+                  maxlength="11"
+                  placeholder="Enter Account Number"
+                  class="p-2 bg-gray-200 focus:outline-0 border-0 ps-4 rounded-md"
+                />
+              </div>
               <!-- amount input -->
-              <div></div>
+              <div class="w-full h-fit flex flex-col space-y-2">
+                <label for="amount">Amount</label>
+                <input
+                  id="amount"
+                  type="number"
+                  placeholder="Enter Amount"
+                  class="p-2 bg-gray-200 focus:outline-0 border-0 ps-4 rounded-md"
+                />
+              </div>
               <!-- pin input -->
-              <div></div>
+              <div class="w-full h-fit flex flex-col space-y-2">
+                <label for="pin">PIN</label>
+                <input
+                  id="pin"
+                  type="number"
+                  maxlength="4"
+                  placeholder="Enter PIN"
+                  class="p-2 bg-gray-200 focus:outline-0 border-0 ps-4 rounded-md"
+                />
+              </div>
               <!-- add btn -->
-              <div></div>
+              <button
+                class="btn bg-blue-500 w-full mt-6 text-white font-medium text-lg"
+              >
+                Add Money
+              </button>
             </form>
           </div>
         </div>
