@@ -187,6 +187,58 @@
             </form>
           </div>
         </div>
+
+        <!-- cash out form -->
+        <div class="p-2 w-full h-fit my-4">
+          <h2 class="font-semibold capitalize text-2xl text-gray-700">
+            Cash Out
+          </h2>
+          <div
+            class="px-2 py-6 w-full h-fit bg-white rounded-md shadow-md mt-3"
+          >
+            <form id="cashOutForm" class="w-full space-y-4">
+              <!-- account number -->
+              <div class="w-full h-fit flex flex-col space-y-2">
+                <label for="agentNumber">Agent Number</label>
+                <input
+                  id="agentNumber"
+                  type="number"
+                  maxlength="11"
+                  placeholder="Enter Agent Number"
+                  class="p-2 bg-gray-200 focus:outline-0 border-0 ps-4 rounded-md"
+                />
+              </div>
+              <!-- amount input -->
+              <div class="w-full h-fit flex flex-col space-y-2">
+                <label for="cashOutAmount">Amount</label>
+                <input
+                  id="cashOutAmount"
+                  type="number"
+                  placeholder="Enter Amount to Withdraw"
+                  class="p-2 bg-gray-200 focus:outline-0 border-0 ps-4 rounded-md"
+                />
+              </div>
+              <!-- pin input -->
+              <div class="w-full h-fit flex flex-col space-y-2">
+                <label for="pin">PIN</label>
+                <input
+                  id="cashOutPin"
+                  type="number"
+                  maxlength="4"
+                  placeholder="Enter PIN"
+                  class="p-2 bg-gray-200 focus:outline-0 border-0 ps-4 rounded-md"
+                />
+              </div>
+              <!-- cash out btn -->
+              <button
+                id="cashOutBtn"
+                class="btn bg-blue-500 w-full mt-6 text-white font-medium text-lg"
+              >
+                Withdraw Money
+              </button>
+            </form>
+          </div>
+        </div>
       </section>
     </main>
     <script src="./utilis.js"></script>
