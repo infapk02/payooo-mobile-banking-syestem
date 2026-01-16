@@ -22,7 +22,7 @@
   <body>
     <main class="w-full h-screen overflow-hidden bg-slate-900">
       <section
-        class="max-w-md h-screen overflow-x-hidden overflow-y-scroll bg-gray-100 mx-auto hide-scrollbar"
+        class="max-w-md h-screen overflow-x-hidden overflow-y-auto bg-gray-100 mx-auto hide-scrollbar"
       >
         <nav
           class="flex justify-between items-center p-4 border-b-2 border-gray-300"
@@ -40,7 +40,9 @@
 
             <!-- text div -->
             <div>
-              <h3 class="text-2xl font-semibold">$ <span>4500</span></h3>
+              <h3 class="text-2xl font-semibold">
+                $ <span id="mainBalance">4500</span>
+              </h3>
               <p class="text-sm capitalize text-gray-700">available balance</p>
             </div>
           </div>
@@ -122,7 +124,7 @@
           <div
             class="px-2 py-6 w-full h-fit bg-white rounded-md shadow-md mt-3"
           >
-            <form class="w-full space-y-4">
+            <form id="addMoneyForm" class="w-full space-y-4">
               <!-- select input -->
               <div class="w-full flex flex-col space-y-2">
                 <label for="selectMethod" class="capitalize"
@@ -133,7 +135,9 @@
                   id="selectMethod"
                   class="w-full p-2 rounded-md bg-gray-200 border-0 focus:border-0 focus:outline-0"
                 >
-                  <option class="capitalize">Select a Method</option>
+                  <option class="capitalize" value="" selected disabled hidden>
+                    Select a Method
+                  </option>
                   <option class="capitalize" value="Bkash">Bkash</option>
                   <option class="capitalize" value="Nagad">Nagad</option>
                   <option class="capitalize" value="DBBL">DBBL</option>
@@ -175,6 +179,7 @@
               </div>
               <!-- add btn -->
               <button
+                id="addMoneyBtn"
                 class="btn bg-blue-500 w-full mt-6 text-white font-medium text-lg"
               >
                 Add Money
@@ -184,5 +189,7 @@
         </div>
       </section>
     </main>
+    <script src="./utilis.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>
