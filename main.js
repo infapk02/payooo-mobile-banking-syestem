@@ -73,3 +73,31 @@ transferBtn.addEventListener("click", function (e) {
     alert("please enter valid input");
   }
 });
+
+// pay bill functionalities
+const payBillBtn = document.getElementById("payBillBtn");
+payBillBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+
+  const payBillForm = document.getElementById("payBillForm");
+  const selectPayment = document.getElementById("selectPayment");
+  const billerAccountNumber = document.getElementById("billerAccountNumber");
+  const billingAmount = document.getElementById("billingAmount");
+  const billingPin = document.getElementById("billingPin");
+  const mainBalance = document.getElementById("mainBalance");
+  const convertedMainBalance = parseInt(mainBalance.innerText);
+  const convertedBillingAmount = parseInt(billingAmount.value);
+
+  if (
+    selectPayment.value &&
+    billerAccountNumber.value.length === 11 &&
+    billingAmount.value &&
+    billingPin.value === "4700"
+  ) {
+    mainBalance.innerText = convertedMainBalance - convertedBillingAmount;
+
+    payBillForm.reset();
+  } else {
+    alert("please enter valid input");
+  }
+});

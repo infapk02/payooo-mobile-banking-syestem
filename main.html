@@ -291,6 +291,82 @@
             </form>
           </div>
         </div>
+
+        <div class="p-2 w-full h-fit my-4">
+          <h2 class="font-semibold capitalize text-2xl text-gray-700">
+            Pay Bill
+          </h2>
+          <div
+            class="px-2 py-6 w-full h-fit bg-white rounded-md shadow-md mt-3"
+          >
+            <form id="payBillForm" class="w-full space-y-4">
+              <!-- select input -->
+              <div class="w-full flex flex-col space-y-2">
+                <label for="selectPayment" class="capitalize"
+                  >Select to Pay</label
+                >
+                <select
+                  name="selectPayment"
+                  id="selectPayment"
+                  class="w-full p-2 rounded-md bg-gray-200 border-0 focus:border-0 focus:outline-0"
+                >
+                  <option class="capitalize" value="" selected disabled hidden>
+                    Select to Pay
+                  </option>
+                  <option class="capitalize" value="Gas Bill">Gas Bill</option>
+                  <option class="capitalize" value="Water Bill">
+                    Water Bill
+                  </option>
+                  <option class="capitalize" value="Electricity Bill">
+                    Electricity Bill
+                  </option>
+                  <option class="capitalize" value="Internet Bill">
+                    Internet Bill
+                  </option>
+                </select>
+              </div>
+              <!-- account number -->
+              <div class="w-full h-fit flex flex-col space-y-2">
+                <label for="billerAccountNumber">Biller Account Number</label>
+                <input
+                  id="billerAccountNumber"
+                  type="number"
+                  maxlength="11"
+                  placeholder="Enter Biller Account Number"
+                  class="p-2 bg-gray-200 focus:outline-0 border-0 ps-4 rounded-md"
+                />
+              </div>
+              <!-- amount input -->
+              <div class="w-full h-fit flex flex-col space-y-2">
+                <label for="billingAmount">Amount</label>
+                <input
+                  id="billingAmount"
+                  type="number"
+                  placeholder="Enter Billing Amount"
+                  class="p-2 bg-gray-200 focus:outline-0 border-0 ps-4 rounded-md"
+                />
+              </div>
+              <!-- pin input -->
+              <div class="w-full h-fit flex flex-col space-y-2">
+                <label for="billingPin">PIN</label>
+                <input
+                  id="billingPin"
+                  type="number"
+                  maxlength="4"
+                  placeholder="Enter PIN"
+                  class="p-2 bg-gray-200 focus:outline-0 border-0 ps-4 rounded-md"
+                />
+              </div>
+              <!-- pay bill btn -->
+              <button
+                id="payBillBtn"
+                class="btn bg-blue-500 w-full mt-6 text-white font-medium text-lg"
+              >
+                Pay Bill
+              </button>
+            </form>
+          </div>
+        </div>
       </section>
     </main>
     <script src="./utilis.js"></script>
