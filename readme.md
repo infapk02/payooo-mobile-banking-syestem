@@ -43,7 +43,7 @@ Example: https://infapk02.github.io/payooo-mobile-banking-syestem/
 
 ## 📂 Project Structure
 
-payooo-mobile-banking/
+`payooo-mobile-banking/
 │
 ├── index.html # Login Page
 ├── main.html # Main Dashboard
@@ -52,6 +52,7 @@ payooo-mobile-banking/
 ├── utilis.js # Reusable Helper Functions
 ├── style.css # Custom Styles
 └── assets/ # Images & Icons
+`
 
 ## 🔑 Demo Credentials
 
@@ -118,7 +119,7 @@ payooo-mobile-banking/
 
 ## 👨‍💻 Author
 
-- Infa Ahmed \*
+**Infa Ahmed**
 
 ⭐ Show Your Support
 
