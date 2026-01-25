@@ -41,19 +41,6 @@ Example: https://infapk02.github.io/payooo-mobile-banking-syestem/
 
 - Remix Icon
 
-## 📂 Project Structure
-
-`payooo-mobile-banking/
-│
-├── index.html # Login Page
-├── main.html # Main Dashboard
-├── index.js # Login Logic
-├── main.js # All Banking Functionalities
-├── utilis.js # Reusable Helper Functions
-├── style.css # Custom Styles
-└── assets/ # Images & Icons
-`
-
 ## 🔑 Demo Credentials
 
 - Use the following credentials to log in:
