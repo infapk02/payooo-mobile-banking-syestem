@@ -66,10 +66,11 @@
         </div>
 
         <!-- menu boxes -->
-        <div class="grid grid-cols-3 p-2 gap-2">
+        <div id="menuBoxes" class="grid grid-cols-3 p-2 gap-2">
           <!-- add money card -->
           <div
-            class="box bg-white shadow-md rounded-md py-5 flex flex-col justify-center items-center"
+            id="addMoneyBox"
+            class="box bg-white shadow-md rounded-md py-5 flex flex-col justify-center items-center font-medium text-gray-400"
           >
             <img src="./assets/purse1.png" alt="money-add-image" />
             <p class="text-sm capitalize mt-1">add money</p>
@@ -77,7 +78,8 @@
 
           <!-- cash-out card -->
           <div
-            class="box bg-white shadow-md rounded-md py-5 flex flex-col justify-center items-center"
+            id="cashOutBox"
+            class="box bg-white shadow-md rounded-md py-5 flex flex-col justify-center items-center font-medium text-gray-400"
           >
             <img src="./assets/send1.png" alt="money-send-image" />
             <p class="text-sm capitalize mt-1">cash out</p>
@@ -85,7 +87,8 @@
 
           <!-- transfer money card -->
           <div
-            class="box bg-white shadow-md rounded-md py-5 flex flex-col justify-center items-center"
+            id="transferMoneyBox"
+            class="box bg-white shadow-md rounded-md py-5 flex flex-col justify-center items-center font-medium text-gray-400"
           >
             <img src="./assets/money1.png" alt="money-image" />
             <p class="text-sm capitalize mt-1">transfer money</p>
@@ -93,7 +96,8 @@
 
           <!-- bonus card -->
           <div
-            class="box bg-white shadow-md rounded-md py-5 flex flex-col justify-center items-center"
+            id="getBonusBox"
+            class="box bg-white shadow-md rounded-md py-5 flex flex-col justify-center items-center font-medium text-gray-400"
           >
             <img src="./assets/bonus1.png" alt="bonus-image" />
             <p class="text-sm capitalize mt-1">get bonus</p>
@@ -101,7 +105,8 @@
 
           <!-- pay bill card -->
           <div
-            class="box bg-white shadow-md rounded-md py-5 flex flex-col justify-center items-center"
+            id="payBillBox"
+            class="box bg-white shadow-md rounded-md py-5 flex flex-col justify-center items-center font-medium text-gray-400"
           >
             <img src="./assets/wallet1.png" alt="wallet-image" />
             <p class="text-sm capitalize mt-1">pay bill</p>
@@ -109,7 +114,8 @@
 
           <!-- transactions card -->
           <div
-            class="box bg-white shadow-md rounded-md py-5 flex flex-col justify-center items-center"
+            id="transactionHistoryBox"
+            class="box bg-white shadow-md rounded-md py-5 flex flex-col justify-center items-center font-medium text-gray-400"
           >
             <img src="./assets/transaction1.png" alt="transactions-image" />
             <p class="text-sm capitalize mt-1">transactions</p>
@@ -117,7 +123,7 @@
         </div>
 
         <!-- add money section -->
-        <div class="p-2 w-full h-fit my-4">
+        <div id="addMoneySection" class="hidden p-2 w-full h-fit my-4">
           <h2 class="font-semibold capitalize text-2xl text-gray-700">
             add money
           </h2>
@@ -189,7 +195,7 @@
         </div>
 
         <!-- cash out form -->
-        <div class="p-2 w-full h-fit my-4">
+        <div id="cashOutSection" class="hidden p-2 w-full h-fit my-4">
           <h2 class="font-semibold capitalize text-2xl text-gray-700">
             Cash Out
           </h2>
@@ -240,8 +246,40 @@
           </div>
         </div>
 
+        <!-- get bonus form -->
+        <div id="getBonusSection" class="hidden p-2 w-full h-fit my-4">
+          <h2 class="font-semibold capitalize text-2xl text-gray-700">
+            get bonus
+          </h2>
+          <div
+            class="px-2 py-6 w-full h-fit bg-white rounded-md shadow-md mt-3"
+          >
+            <form id="getBonusForm" class="w-full space-y-4">
+              <!-- coupon input -->
+              <div class="w-full h-fit flex flex-col space-y-2">
+                <label for="getBonus" class="capitalize"
+                  >enter bonus coupon</label
+                >
+                <input
+                  id="getBonus"
+                  type="text"
+                  placeholder="Enter Bonus Coupon"
+                  class="p-2 bg-gray-200 focus:outline-0 border-0 ps-4 rounded-md"
+                />
+              </div>
+              <!-- get bonus btn -->
+              <button
+                id="getBonusBtn"
+                class="btn bg-blue-500 w-full mt-6 text-white font-medium text-lg"
+              >
+                Get Bonus
+              </button>
+            </form>
+          </div>
+        </div>
+
         <!-- transfer money form -->
-        <div class="p-2 w-full h-fit my-4">
+        <div id="transferMoneySection" class="hidden p-2 w-full h-fit my-4">
           <h2 class="font-semibold capitalize text-2xl text-gray-700">
             Transfer Money
           </h2>
@@ -292,7 +330,8 @@
           </div>
         </div>
 
-        <div class="p-2 w-full h-fit my-4">
+        <!-- pay bill form -->
+        <div id="payBillSection" class="hidden p-2 w-full h-fit my-4">
           <h2 class="font-semibold capitalize text-2xl text-gray-700">
             Pay Bill
           </h2>
@@ -366,6 +405,18 @@
               </button>
             </form>
           </div>
+        </div>
+
+        <!-- transactions -->
+        <div
+          id="transactionHistorySection"
+          class="hidden p-2 w-full h-fit my-4"
+        >
+          <h2 class="font-semibold capitalize text-2xl text-gray-700">
+            transactions history
+          </h2>
+
+          <div id="transactionsContainer" class="space-y-4 mt-8"></div>
         </div>
       </section>
     </main>
